@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      body {
+        background: #111;
+        margin: 0;
+      }
+
+      #MainGuide-horizontal, .guide-horizontal,
+      #MainGuide-vertical, .guide-vertical {
+        background-color: rgba(255, 255, 255, .5);
+        position: fixed;
+        z-index: 100000;
+      }
+
+      #MainGuide-horizontal, .guide-horizontal {
+        left: 0;
+        width: 100%;
+        height: 1px;
+      }
+
+      #MainGuide-vertical, .guide-vertical {
+        top: 0;
+        width: 1px;
+        height: 100%;
+      }
+
+      #info {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: .5em;
+        font-size: .9em;
+        background-color: rgba(255, 255, 255, .7);
+        font-family: sans-serif;
+        z-index: 100001;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <script src="AeroGuides.js"></script>
+  </body>
+</html>
